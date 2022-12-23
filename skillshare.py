@@ -92,7 +92,7 @@ class Skillshare(object):
             print('')
 
     def fetch_course_data_by_class_id(self, class_id):
-        url = 'https://api.skillshare.com/classes/{}'.format(class_id)
+        url = 'https://api.skillshare.com/en/classes/{}'.format(class_id)
         scraper = cloudscraper.create_scraper(
             browser={
                 'custom': 'Skillshare/4.1.1; Android 5.1.1',
